@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite Especial</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 100px;
+            background-color: #ffcccb;
+        }
+        h1 {
+            color: #d9534f;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            position: relative;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            position: relative;
+        }
+        .yes {
+            background-color: #5cb85c;
+            color: white;
+        }
+        .no {
+            background-color: #d9534f;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quer jantar comigo? 🍽️❤️</h1>
+    <div class="container">
+        <button class="yes" onclick="alert('Ótimo! Vamos jantar! 😍')">Sim!</button>
+        <button class="no" onmouseover="moveNoButton()">Não...</button>
+    </div>
+    
+    <script>
+        function moveNoButton() {
+            let btn = document.querySelector('.no');
+            let maxX = window.innerWidth - btn.clientWidth - 50;
+            let maxY = window.innerHeight - btn.clientHeight - 50;
+            let x = Math.random() * maxX;
+            let y = Math.random() * maxY;
+            btn.style.position = 'absolute';
+            btn.style.left = `${x}px`;
+            btn.style.top = `${y}px`;
+        }
+    </script>
+</body>
+</html>
