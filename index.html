@@ -7,37 +7,61 @@
     <style>
         body {
             text-align: center;
-            font-family: Arial, sans-serif;
-            margin-top: 100px;
-            background-color: #ffcccb;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffc0cb;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            min-height: 100%;
         }
         h1 {
-            color: #d9534f;
+            color: #d6336c;
+            font-size: 5vw;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 0;
         }
         .container {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 5vw;
             margin-top: 20px;
             position: relative;
         }
         button {
-            padding: 10px 20px;
-            font-size: 18px;
+            padding: 3vw 6vw;
+            font-size: 2vw;
             border: none;
             cursor: pointer;
-            border-radius: 5px;
-            position: relative;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
         .yes {
-            background-color: #5cb85c;
+            background-color: #ff69b4;
             color: white;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        .yes:hover {
+            transform: scale(1.1);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
         }
         .no {
-            background-color: #d9534f;
+            background-color: #d6336c;
             color: white;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        .no:hover {
+            transform: scale(1.1);
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Quer jantar comigo? 🍽️❤️</h1>
